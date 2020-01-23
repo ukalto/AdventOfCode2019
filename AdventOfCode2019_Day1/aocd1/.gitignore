@@ -1,3 +1,4 @@
 .stack-work/
 aocd1.cabal
 *~
+.DS_Store

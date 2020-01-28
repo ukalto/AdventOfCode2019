@@ -26,9 +26,12 @@ dependencies:
 - mtl
 - megaparsec
 - split
+- recursion-schemes
 
 library:
   source-dirs: src
+  exposed-modules:
+    - Fuel
 
 executables:
   aocd1-exe:

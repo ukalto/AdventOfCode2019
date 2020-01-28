@@ -1,6 +1,5 @@
-module Main where
+module Fuel where
 
-import Control.Arrow ((&&&))
 import Data.Functor.Foldable (ana, ListF(..))
 
 type Input = [Int]
@@ -29,5 +28,3 @@ part2 = sum . concatMap tyrannicalCost'
 prepare :: String -> Input
 prepare = map read . lines
 
-main :: IO ()
-main = readFile "input.txt" >>= print . (part1 &&& part2) . prepare
